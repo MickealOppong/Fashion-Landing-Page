@@ -1,5 +1,6 @@
 :root {
   ---primary-1: #00ff00;
+  --gray-1: rgb(119, 122, 125);
   ---nav: #B96A59;
   ---spacing: 1px;
   ---font: 1.5rem;
@@ -34,6 +35,8 @@ a {
   font-size: var(---font);
   background-color: transparent;
   border-color: transparent;
+  text-decoration: none;
+  color: var(--gray-1)
 }
 
 .banner-container {
@@ -55,6 +58,7 @@ a {
 .social-btns {
   display: flex;
   flex-direction: column;
+  row-gap: 1rem;
   align-items: center;
 }
 
