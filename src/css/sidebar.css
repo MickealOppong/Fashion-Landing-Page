@@ -6,6 +6,7 @@
   width: 50%;
   min-height: 100vh;
   background-color: lightblue;
+  visibility: hidden;
 }
 
 .sidebar {
@@ -23,4 +24,14 @@
   border-color: transparent;
   font-size: var(---font);
   color: rgb(195, 201, 203);
+}
+
+.show {
+  transform: translateX(0);
+  transition: 5s;
+}
+
+.hide {
+  transform: translateX(-100%);
+  transition: 5s;
 }
