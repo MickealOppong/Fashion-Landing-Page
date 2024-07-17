@@ -5,8 +5,8 @@
   left: 0;
   width: 50%;
   min-height: 100vh;
-  background-color: lightblue;
-  visibility: hidden;
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .sidebar {
@@ -27,11 +27,17 @@
 }
 
 .show {
-  transform: translateX(0);
-  transition: 5s;
+  transform: translateX(0%);
+  transition: 0.5s;
 }
 
 .hide {
   transform: translateX(-100%);
-  transition: 5s;
+  transition: 0.5s;
+}
+
+@media screen and (min-width:992px) {
+  .sidebar-container {
+    display: none;
+  }
 }

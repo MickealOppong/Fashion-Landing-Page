@@ -6,16 +6,20 @@ let closeBtn = document.querySelector('.closeBtn-container') as HTMLElement
 let hamburgerBtn = document.querySelector('.hamburgerBtn') as HTMLElement
 
 
-//functions
-closeBtn.addEventListener('click', function () {
-  if (sidebarContainer.classList.contains('show')) {
+//open sidebar
+hamburgerBtn.addEventListener('click', function () {
+  sidebarContainer.classList.add('show')
+  if (sidebarContainer.classList.contains('hide')) {
     sidebarContainer.classList.remove('hide')
   }
 }
 )
 
-
-hamburgerBtn.addEventListener('click', function () {
-  sidebarContainer.classList.add('show')
+//hide sidebar
+closeBtn.addEventListener('click', function () {
+  sidebarContainer.classList.add('hide')
+  if (sidebarContainer.classList.contains('show')) {
+    sidebarContainer.classList.remove('show')
+  }
 }
 )
