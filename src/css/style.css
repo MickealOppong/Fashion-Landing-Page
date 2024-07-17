@@ -1,0 +1,25 @@
+:root {
+  ---primary-1: #00ff00;
+  ---nav: #B96A59;
+  ---spacing: 1px;
+  ---font: 1.5rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+ul {
+
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

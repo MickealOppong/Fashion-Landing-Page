@@ -1,0 +1,26 @@
+.sidebar-container {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 50%;
+  min-height: 100vh;
+  background-color: lightblue;
+}
+
+.sidebar {
+  display: flex;
+}
+
+.closeBtn-container {
+  position: absolute;
+  top: 10;
+  right: 10;
+}
+
+.close-btn {
+  background-color: transparent;
+  border-color: transparent;
+  font-size: var(---font);
+  color: rgb(195, 201, 203);
+}
