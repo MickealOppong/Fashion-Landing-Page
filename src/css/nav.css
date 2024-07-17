@@ -74,10 +74,6 @@
   border-color: transparent;
 }
 
-.btn {
-  outline-color: white;
-  font-size: var(---font);
-}
 
 .btn-cart {
   font-size: 2rem;
@@ -86,10 +82,11 @@
 .nav-menu-container {
   position: absolute;
   padding: 1rem 2rem 1rem 2rem;
-
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   visibility: hidden;
+  background-color: white;
+
 }
 
 .nav-menu {

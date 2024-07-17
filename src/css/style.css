@@ -23,3 +23,58 @@ li {
 a {
   text-decoration: none;
 }
+
+.btn {
+  outline-color: white;
+  font-size: var(---font);
+}
+
+.social-btn {
+  outline-color: white;
+  font-size: var(---font);
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.banner-container {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 2rem;
+  padding: 1rem;
+}
+
+.social-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-text {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem;
+  transform: rotate(270deg);
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+.main-banner {
+  padding: 1rem;
+  width: 100%;
+  height: 80vh;
+  background-color: lightblue;
+}
+
+footer {
+  width: 100vw;
+  background-color: darkslategrey;
+}
