@@ -2,7 +2,6 @@
 import { navData } from "./data";
 
 let navLinks = document.querySelector('.nav-links') as Element
-let navHeader = document.querySelector('.nav-header') as HTMLDivElement
 
 let navMenuContainer = document.querySelector('.nav-menu-container') as HTMLDivElement
 
@@ -11,12 +10,10 @@ let itemToExcludeCaret = ['about', 'contact']
 // this function loads the nav links data
 let navLinkItems = navData.map((item, index) => {
 
-  return `<div class="link ">
-          <div class="link-header ${index === 0 ? 'active-link' : ''}">
-            <li ass="nav-link">${item.title}</li>
+  return ` <li class="link ${index === 0 ? 'active' : ''}">
+            <a  href=${item.url} target="_blank" class="nav-link">${item.title}</a>
             <i class="fa fa-caret-down ${itemToExcludeCaret.includes(item.title) ? 'hide-icon' : ''}"></i>
-          </div>
-          </div>`
+            </li>`
 }).join('')
 
 
@@ -26,18 +23,18 @@ if (navLinkItems !== null) {
 
 // this function add or remove the active link depending on which link is in focus
 
-let links = navLinks.querySelectorAll('.link-header')
+let links = navLinks.querySelectorAll('.link')
 
 
 links.forEach((link) => {
   link.addEventListener('mouseover', function () {
-    if (!link.classList.contains('active-link')) {
-      link.classList.add('active-link')
+    if (!link.classList.contains('active')) {
+      link.classList.add('active')
     }
 
     links.forEach((item, index) => {
       if ((item !== link) && index !== 0) {
-        item.classList.remove('active-link')
+        item.classList.remove('active')
       }
     })
   }
@@ -48,14 +45,14 @@ links.forEach((link) => {
 // function to load the content of each nav link.
 links.forEach((link) => {
   link.addEventListener('mouseover', function (e) {
-    const selected = link.querySelector('li')?.textContent
+    const selected = link.querySelector('a')?.textContent
 
     const selectedMenu = navData.find((item) => item.title === selected)
 
 
     const menu = selectedMenu?.menu?.map((menuItem) => {
       return `
-      <li>${menuItem}</li>
+      <li><a href="">${menuItem}</a></li>
     `
     }).join('')
 
@@ -73,8 +70,6 @@ links.forEach((link) => {
     navMenuContainer.style.left = `${dim.left}`;
     navMenuContainer.style.visibility = 'visible'
 
-
-
   })
 })
 
@@ -90,6 +85,7 @@ window.addEventListener('mouseover', function (e: MouseEvent) {
   let bottom = dim.bottom;
   if ((e.pageX < left) || (e.pageX > right) || (e.pageY > bottom)) {
     navMenuContainer.style.visibility = 'hidden'
+
   }
 
 });

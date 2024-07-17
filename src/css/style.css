@@ -3,7 +3,9 @@
   --gray-1: rgb(119, 122, 125);
   ---nav: #B96A59;
   ---spacing: 1px;
-  ---font: 1.5rem;
+  ---font-1: 0.85rem;
+  ---font-2: 1.2rem;
+  ---font-3: 1.5rem;
 }
 
 body {
@@ -26,23 +28,20 @@ a {
 }
 
 .btn {
-  outline-color: white;
-  font-size: var(---font);
+  font: var(---font-2);
 }
 
-.social-btn {
-  outline-color: white;
-  font-size: var(---font);
-  background-color: transparent;
-  border-color: transparent;
-  text-decoration: none;
-  color: var(--gray-1)
-}
+
 
 .banner-container {
   display: flex;
   width: 100vw;
   min-height: 100vh;
+}
+
+
+.main-banner {
+  border: var(--gray-1) solid 1px;
 }
 
 .social {
@@ -55,11 +54,21 @@ a {
   padding: 1rem;
 }
 
-.social-btns {
+.social-links {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
   align-items: center;
+}
+
+.social-link {
+  outline-color: white;
+  font-size: var(---font);
+  background-color: transparent;
+  border-color: transparent;
+  text-decoration: none;
+  color: var(--gray-1);
+  font-size: var(---font-3)
 }
 
 .social-text {
@@ -69,6 +78,7 @@ a {
   transform: rotate(270deg);
   text-transform: uppercase;
   margin-top: 1rem;
+  color: var(--gray-1);
 }
 
 .main-banner {
@@ -80,5 +90,6 @@ a {
 
 footer {
   width: 100vw;
+  height: 10rem;
   background-color: darkslategrey;
 }
