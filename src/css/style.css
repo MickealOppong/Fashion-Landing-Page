@@ -15,7 +15,6 @@ body {
 
 
 ul {
-
   padding: 0;
 }
 
@@ -35,22 +34,17 @@ a {
 
 .banner-container {
   display: flex;
-  width: 100vw;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
-
-.main-banner {
-  border: var(--gray-1) solid 1px;
-}
 
 .social {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-  width: 2rem;
+  gap: 1rem;
+  width: 1.5rem;
   padding: 1rem;
 }
 
@@ -62,7 +56,6 @@ a {
 }
 
 .social-link {
-  outline-color: white;
   font-size: var(---font);
   background-color: transparent;
   border-color: transparent;
@@ -81,15 +74,58 @@ a {
   color: var(--gray-1);
 }
 
-.main-banner {
-  padding: 1rem;
+.slider-container {
   width: 100%;
-  height: 80vh;
-  background-color: lightblue;
+  border: var(--gray-1) solid 1px;
 }
 
 footer {
   width: 100vw;
   height: 10rem;
   background-color: darkslategrey;
+}
+
+.slider-container {
+  position: relative;
+  display: flex;
+}
+
+.slider {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.slide img {
+  width: 100%;
+  height: 40rem;
+}
+
+.slide-content {
+  position: absolute;
+  top: 0;
+}
+
+.slider-btns {
+  position: absolute;
+  top: 80%;
+  left: 20%;
+}
+
+
+@media screen and (min-width:992px) {
+  .social {
+    display: flex;
+  }
 }

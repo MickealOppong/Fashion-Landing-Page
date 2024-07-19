@@ -65,7 +65,6 @@
 .btn-user {
   background-color: transparent;
   border-color: transparent;
-
   font-size: var(---font-3);
 }
 
@@ -78,6 +77,7 @@
   border-radius: 5px;
   visibility: hidden;
   background-color: white;
+  z-index: 200;
 
 }
 
