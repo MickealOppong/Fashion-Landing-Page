@@ -36,11 +36,11 @@
 }
 
 .active a {
-  color: var(---nav);
+  color: var(---secondary);
 }
 
 .active i {
-  color: var(---nav);
+  color: var(---secondary);
 }
 
 
@@ -52,7 +52,7 @@
 .underline {
   width: 4rem;
   height: 5px;
-  background-color: var(---nav);
+  background-color: var(---secondary);
 }
 
 .active-link .underline {
