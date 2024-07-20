@@ -21,5 +21,7 @@ closeBtn.addEventListener('click', function () {
   if (sidebarContainer.classList.contains('show')) {
     sidebarContainer.classList.remove('show')
   }
+  console.log('ll');
+
 }
 )
