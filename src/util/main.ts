@@ -89,3 +89,25 @@ function changeSlide() {
 
 changeSlide();
 
+
+///loading  trending products
+const trendBtn = document.querySelector('.trend-btns') as HTMLDivElement
+
+
+const children = [...trendBtn.children];
+
+children.forEach((child) => {
+  child.addEventListener('click', function (e) {
+    const selectedBtn = e.target;
+    if (selectedBtn instanceof Element) {
+      selectedBtn.classList.add('active-trend')
+      const nextElem = selectedBtn.nextElementSibling;
+      nextElem?.classList.add('active-trend')
+    }
+
+  })
+
+})
+
+
+

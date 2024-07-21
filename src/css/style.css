@@ -396,6 +396,7 @@ footer {
   font-size: 0.85rem;
 }
 
+
 .collection-btn {
   font-size: var(---font-1);
   text-transform: uppercase;
@@ -410,13 +411,14 @@ footer {
   color: black;
 }
 
-.collection-btn:hover {
+
+.collection-btn:hover a {
   background-color: black;
+  color: white;
 }
 
-
-.collection-btn a:hover {
-  color: white;
+.collection-btn:hover {
+  background-color: black;
 }
 
 .collections p,
@@ -433,6 +435,93 @@ footer {
   margin-top: 1rem;
 }
 
+
+.trends {
+  display: flex;
+  flex-direction: column;
+  max-width: 85vw;
+  margin: 5rem auto;
+}
+
+
+.trend-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trend-header h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: var(---spacing);
+}
+
+.trend-header h2 span {
+  font-weight: 700;
+}
+
+.trend-btns {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.new-arrival-btn,
+.best-sellers-btn,
+.top-rating-btn {
+  background-color: transparent;
+  border-color: transparent;
+  text-transform: uppercase;
+  color: gray;
+  font-size: var(---font-1);
+  transition: 0.1s;
+  width: 8rem;
+  margin-left: -1rem;
+}
+
+
+.top-rating-btn {
+  margin-left: -1.5rem;
+}
+
+.active-trend {
+  color: black;
+  transition: 0.1s;
+  font-weight: 600;
+}
+
+.active-trend.t-underline {
+  opacity: 1;
+}
+
+.new-arrival:hover .new-arrival-btn,
+.best-sellers:hover .best-sellers-btn,
+.top-rating:hover .top-rating-btn {
+  color: black;
+  font-weight: 600;
+  transition: 0.1s;
+}
+
+.new-arrivals:hover .t-underline,
+.best-sellers:hover .t-underline,
+.top-rating:hover .t-underline {
+  opacity: 1;
+  transition: 0.1s;
+}
+
+.new-arrivals,
+.best-sellers,
+.top-rating {
+  display: flex;
+  flex-direction: column;
+}
+
+.t-underline {
+  display: flex;
+  width: 4rem;
+  height: 3px;
+  background-color: black;
+  opacity: 0;
+}
 
 
 @media screen and (min-width:992px) {
