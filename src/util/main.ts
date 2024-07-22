@@ -1,4 +1,4 @@
-import { images } from "./data";
+import { deals, images, trendingProducts } from "./data";
 ;
 
 const slider = document.querySelector('.slider') as HTMLElement
@@ -92,22 +92,131 @@ changeSlide();
 
 ///loading  trending products
 const trendBtn = document.querySelector('.trend-btns') as HTMLDivElement
+const productsContainer = document.querySelector('.trending-products') as HTMLDivElement
 
-
+//default products
+let selectedItem: string = 'new arrival'
 const children = [...trendBtn.children];
 
 children.forEach((child) => {
   child.addEventListener('click', function (e) {
+
     const selectedBtn = e.target;
+
     if (selectedBtn instanceof Element) {
+
       selectedBtn.classList.add('active-trend')
       const nextElem = selectedBtn.nextElementSibling;
       nextElem?.classList.add('active-trend')
+      if (selectedBtn.textContent) {
+        selectedItem = selectedBtn.textContent;
+        loadProducts(selectedItem)
+      }
     }
-
+    children.forEach((elem) => {
+      if (elem !== child) {
+        const firstELem = elem.firstElementChild;
+        const nextElem = firstELem?.nextElementSibling;
+        firstELem?.classList.remove('active-trend')
+        nextElem?.classList.remove('active-trend')
+      }
+    })
   })
 
 })
 
+//function to load product based on which button is clicked
+function loadProducts(category: string) {
+  const trend = trendingProducts.find((product) => product.title === category);
 
 
+  const trendProducts = trend?.products.map((product) => {
+    const { name, img, price, colour, size } = product;
+    return `<div class="product">
+                   <img
+                   src="${img}" alt="">
+                   <div class="product-info">
+                    <p>${name}</p>
+                    <div class="product-size">
+                    ${size.map((s, index) => {
+      return `<span class="size ${index === 0 ? 'active-attribute' : ''}">${s}</span>`
+    }).join('')}
+                    </div>
+                     <div class="product-colour">
+                     ${colour.map((c, index) => {
+      return `<span style="background-color:${c}" class="colour ${index === 0 ? 'active-attribute' : ''}"></span>`
+    }).join('')}
+                    </div>
+                    <span class="price">&#36;${price}</span>
+                   </div>
+
+                   <div class="cart-btn-container">
+                   <button class="cart-btn">add to cart</button>
+                   </div>
+                  </div>
+                  `
+  }).join('')
+
+
+  if (trendProducts) {
+    productsContainer.innerHTML = trendProducts;
+  }
+
+
+}
+
+loadProducts(selectedItem)
+
+
+// handle click event to change active product size and colour
+
+
+productsContainer.addEventListener('click', function (e) {
+  const elem = e.target;
+
+  if (elem instanceof Element && elem.classList.contains('size')
+    || elem instanceof Element && elem.classList.contains('colour')) {
+    elem.classList.add('active-attribute')
+    clearActiveClass(elem, 'size')
+    clearActiveClass(elem, 'colour')
+  }
+
+})
+
+function clearActiveClass(elem: Element, type: string) {
+  const childElem = elem.parentElement?.querySelectorAll(`.${type}`)
+  childElem?.forEach((item) => {
+    if (item !== elem) {
+      item.classList.remove('active-attribute')
+    }
+  })
+}
+
+
+//here you update the season banner
+const seasonContainer = document.querySelector('.season') as HTMLDivElement;
+
+const deal = deals.map((deal) => {
+  const { title, text, img } = deal;
+  return `<div class="deal">
+  <div class="img-container">
+
+  </div>
+  <div class="deal-content">
+<div class="title-container">
+  <span></span>
+  <p>${title}</p>
+</div>
+    <h2>${text}</h2>
+      <div class="deal-btn-container">
+      <button class="deals-btn">shop now</button>
+      </div>
+  </div>
+
+  </div>`
+}).join('')
+
+
+if (deal !== undefined) {
+  seasonContainer.innerHTML = deal;
+}
