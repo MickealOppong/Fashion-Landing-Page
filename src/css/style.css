@@ -8,6 +8,7 @@
   ---font-1: 0.85rem;
   ---font-2: 1.2rem;
   ---font-3: 1.5rem;
+  --maxWith: 90vw;
 }
 
 body {
@@ -38,6 +39,8 @@ a {
 .banner-container {
   display: flex;
   min-height: 80vh;
+  width: 90vw;
+  margin: 0 auto;
 }
 
 
@@ -207,7 +210,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 95vw;
+  max-width: var(--maxWith);
   width: 100%;
   margin: 1rem auto;
   border-top: var(--gray-1) groove 0.5px;
@@ -309,7 +312,7 @@ footer {
 
 .collections {
   display: flex;
-  max-width: 85vw;
+  max-width: var(--maxWith);
   margin: 5rem auto;
   gap: 1rem;
 }
@@ -438,7 +441,7 @@ footer {
 .trends {
   display: flex;
   flex-direction: column;
-  max-width: 85vw;
+  max-width: 90vw;
   margin: 5rem auto;
 }
 
@@ -529,7 +532,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 2rem;
-  max-width: 85vw;
+  max-width: var(--maxWith);
   height: 20vh;
   margin-top: 4rem;
   margin-bottom: 20rem;
@@ -673,12 +676,12 @@ footer {
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 85vw;
+  max-width: var(--maxWith);
+  width: 100%;
   margin: 2rem auto;
 }
 
 .img-container {
-  width: 85vw;
   height: 30rem;
   background-color: rgba(226, 230, 231, 0.7);
 }
@@ -761,7 +764,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 85vw;
+  max-width: var(--maxWith);
   margin: 5rem auto;
   column-gap: 5rem;
 
@@ -802,7 +805,7 @@ footer {
 
 @media screen and (min-width:992px) {
   .social {
-    display: flex;
+    display: none;
   }
 
   .footer-header {
