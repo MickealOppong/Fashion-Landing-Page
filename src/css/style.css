@@ -720,20 +720,84 @@ footer {
   margin-top: -0.5rem;
 }
 
-.deal-btn-container {
+.deal-link-container {
   display: flex;
+  flex-direction: column;
   justify-content: left;
-  background-color: #00ff00;
 }
 
-.deals-btn {
-  background-color: transparent;
-  border-color: transparent;
+.deals-link {
+  color: black;
   width: 8rem;
   height: 2rem;
   text-transform: uppercase;
   font-size: var(---font-1);
   margin-top: -1rem;
+}
+
+.deal-link-container:hover .deals-link {
+  color: rgb(197, 46, 46);
+}
+
+
+.deal-link-container:hover .btn-underline {
+  width: 4.5rem;
+  transition: 0.5s;
+}
+
+.deal-content h2:hover {
+  animation: char 2s linear infinite;
+}
+
+.btn-underline {
+  width: 3rem;
+  height: 3px;
+  background-color: black;
+  transition: 0.5s;
+}
+
+
+.customer-service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 85vw;
+  margin: 5rem auto;
+  column-gap: 5rem;
+
+}
+
+
+.child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.child i {
+  font-size: 4rem;
+  color: darkcyan;
+}
+
+.child span {
+  color: var(--gray-1);
+}
+
+
+
+.child p {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+@keyframes char {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
 }
 
 @media screen and (min-width:992px) {

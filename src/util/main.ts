@@ -208,8 +208,9 @@ const deal = deals.map((deal) => {
   <p>${title}</p>
 </div>
     <h2>${text}</h2>
-      <div class="deal-btn-container">
-      <button class="deals-btn">shop now</button>
+      <div class="deal-link-container">
+       <a  class="deals-link" href="https://mikeoppong.netlify.app" target="_blank">shop now</a>
+      <div class="btn-underline"></div>
       </div>
   </div>
 
