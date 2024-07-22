@@ -9,7 +9,7 @@ const dotBtns: NodeListOf<HTMLDivElement> = document.querySelectorAll('.dot-btn'
 
 
 
-const slides = images.map((item) => {
+const slides = images.map((item,) => {
   return `<div class="slide">
    <img class="slide-img"  src=${item.url} alt="">
    <div class="slide-content">
@@ -70,8 +70,8 @@ dotBtns.forEach((item) => {
 
 //automatically change slides every 5 seconds
 function changeSlide() {
+  let randomIndex: number = Math.floor(Math.random() * 2);
   const interval = setInterval(() => {
-    const randomIndex = Math.floor(Math.random() * 3);
     carousel(randomIndex)
     dotBtns.forEach((btn, index) => {
       if (index === randomIndex) {
@@ -83,6 +83,7 @@ function changeSlide() {
         btn.classList.remove('active-btn')
       }
     })
+
   }, 5000)
 
 }
