@@ -316,7 +316,6 @@ footer {
   width: 100%;
   margin: 5rem auto;
   gap: 1rem;
-  background-color: red;
 }
 
 .women-collections {
@@ -539,8 +538,7 @@ footer {
 
 .trending-products {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 2rem;
+  grid-template-columns: repeat(4, 20rem);
   max-width: var(--maxWith);
   height: 20vh;
   margin-top: 4rem;
@@ -552,6 +550,7 @@ footer {
   flex-direction: column;
   position: relative;
   background-color: white;
+
 }
 
 .product img {
