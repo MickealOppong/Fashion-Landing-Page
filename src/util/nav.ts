@@ -85,7 +85,29 @@ window.addEventListener('mouseover', function (e: MouseEvent) {
   let bottom = dim.bottom;
   if ((e.pageX < left) || (e.pageX > right) || (e.pageY > bottom)) {
     navMenuContainer.style.visibility = 'hidden'
-
   }
 
 });
+
+
+//handle search button click
+const searchBtn = document.querySelector('.btn-search')
+const closeSVG = document.querySelector('.la-times')
+const searchSVG = document.querySelector('.la-search')
+const searchForm = document.querySelector('.form-search');
+
+searchBtn?.addEventListener('click', function () {
+
+  if (closeSVG?.classList.contains('show')) {
+    closeSVG?.classList.add('hide')
+    closeSVG?.classList.remove('show')
+    searchSVG?.classList.remove('hide')
+    searchForm?.classList.remove('show')
+  } else {
+    closeSVG?.classList.remove('hide')
+    closeSVG?.classList.add('show')
+    searchSVG?.classList.add('hide')
+    searchForm?.classList.add('show')
+  }
+
+})

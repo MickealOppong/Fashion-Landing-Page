@@ -77,6 +77,34 @@
   font-size: var(---font-3);
 }
 
+.btn-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.hide.la-times {
+  display: none;
+}
+
+.hide.la-search {
+  display: none;
+}
+
+.show.la-search {
+  display: inline;
+}
+
+.show.la-times {
+  display: inline;
+}
+
+.show.form-search {
+  display: flex;
+  transform: translateY(0%);
+  transition: 1s;
+}
 
 .btn-cart {
   font-size: 1.8rem;
@@ -104,8 +132,41 @@
   visibility: hidden;
 }
 
-.la-caret-down {
-  fill: #B96A59;
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: darkcyan;
+}
+
+.form-search {
+  position: absolute;
+  top: 120%;
+  right: 60%;
+  display: none;
+  align-items: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 0.1rem;
+  width: 20rem;
+  height: 3rem;
+  z-index: 99;
+  background-color: white;
+  transform: translateY(45%);
+  transition: 1s;
+}
+
+.input-control {
+  width: 20rem;
+  border: none;
+  outline: none;
+  text-indent: 10px;
+}
+
+.form-search button {
+  background-color: transparent;
+  border-color: transparent;
+  font-size: var(---font-2);
 }
 
 .hamburger-container {
