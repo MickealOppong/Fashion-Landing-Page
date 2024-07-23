@@ -143,12 +143,12 @@
 .form-search {
   position: absolute;
   top: 120%;
-  right: 60%;
+  right: -450%;
   display: flex;
   align-items: center;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   padding: 0.1rem;
-  width: 20rem;
+  width: 30rem;
   height: 3rem;
   z-index: 99;
   background-color: white;
@@ -159,7 +159,7 @@
 
 
 .input-control {
-  width: 20rem;
+  width: 100vw;
   border: none;
   outline: none;
   text-indent: 10px;
@@ -255,5 +255,11 @@
 
   .nav-center {
     display: flex;
+  }
+
+
+  .form-search {
+    right: 0%;
+    width: 20rem;
   }
 }
