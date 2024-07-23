@@ -335,7 +335,7 @@ footer {
 .men-collections {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  gap: 2rem;
+  gap: 1rem;
   width: 100%;
 
 }
