@@ -127,7 +127,15 @@ userBtn?.addEventListener('click', function () {
   }
 
 })
+userBtn?.addEventListener('mouseover', function () {
 
+  if (userMenu?.classList.contains('show-menu')) {
+    userMenu?.classList.remove('show-menu')
+  } else {
+    userMenu?.classList.add('show-menu')
+  }
+
+})
 
 window.addEventListener('mouseover', function (e: MouseEvent) {
 
