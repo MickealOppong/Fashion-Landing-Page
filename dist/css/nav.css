@@ -29,6 +29,15 @@
 
 }
 
+.logo {
+  color: darkcyan;
+  font-style: italic;
+}
+
+.logo span {
+  color: darkolivegreen;
+
+}
 
 .link a {
   text-decoration: none;
