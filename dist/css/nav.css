@@ -156,6 +156,7 @@
   visibility: hidden;
 }
 
+
 .input-control {
   width: 20rem;
   border: none;
@@ -167,6 +168,22 @@
   background-color: transparent;
   border-color: transparent;
   font-size: var(---font-2);
+}
+
+.user-menu {
+  position: relative;
+  display: inline;
+  width: 10rem;
+  height: 10rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+
+  background-color: lightblue;
+}
+
+.user-menu-items {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
 }
 
 .hamburger-container {
