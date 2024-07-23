@@ -51,7 +51,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  column-gap: 2rem;
   width: 1.5rem;
   padding: 1rem;
 }
@@ -59,17 +59,18 @@ a {
 .social-links {
   display: flex;
   flex-direction: column;
-  row-gap: 1rem;
   align-items: center;
+
 }
+
 
 .social-link {
   font-size: var(---font);
   background-color: transparent;
   border-color: transparent;
   text-decoration: none;
-  color: var(--gray-1);
-  font-size: var(---font-3)
+  color: rgb(92, 92, 219);
+  font-size: var(---font-3);
 }
 
 .social-text {
@@ -83,7 +84,12 @@ a {
 }
 
 
-
+.footer-social-links {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  margin-top: 1rem;
+}
 
 
 .slider-container {
@@ -205,6 +211,7 @@ a {
 footer {
   display: flex;
   width: 100vw;
+
 }
 
 
@@ -213,6 +220,7 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   max-width: var(--maxWith-1);
+  gap: 2rem;
   width: 100%;
   margin: 1rem auto;
   border-top: var(--gray-1) groove 0.5px;
