@@ -12,7 +12,7 @@ let navLinkItems = navData.map((item, index) => {
 
   return ` <li class="link ${index === 0 ? 'active' : ''}">
             <a  href=${item.url} target="_blank" class="nav-link">${item.title}</a>
-            <i class="la la-caret-down ${itemToExcludeCaret.includes(item.title) ? 'hide-icon' : ''}"></i>
+            <i class="fa fa-caret-down ${itemToExcludeCaret.includes(item.title) ? 'hide-icon' : ''}"></i>
             </li>`
 }).join('')
 

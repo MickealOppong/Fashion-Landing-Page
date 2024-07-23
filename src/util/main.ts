@@ -7,7 +7,7 @@ const middleBtn = document.querySelector('.middle-btn') as HTMLElement
 const rightBtn = document.querySelector('.right-btn') as HTMLElement
 const dotBtns: NodeListOf<HTMLDivElement> = document.querySelectorAll('.dot-btn')
 
-
+document.title = 'seahorse'.toUpperCase();
 
 const slides = images.map((item,) => {
   return `<div class="slide">

@@ -88,7 +88,11 @@
 }
 
 .hide-icon {
-  display: none;
+  visibility: hidden;
+}
+
+.la-caret-down {
+  fill: #B96A59;
 }
 
 .hamburger-container {
