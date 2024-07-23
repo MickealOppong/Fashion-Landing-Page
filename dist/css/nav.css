@@ -78,6 +78,10 @@
 }
 
 
+.btn-cart {
+  font-size: 1.8rem;
+}
+
 
 .nav-menu-container {
   position: absolute;
@@ -111,7 +115,7 @@
 .hamburgerBtn {
   background-color: transparent;
   border-color: transparent;
-  font-size: var(---font);
+  font-size: var(---font-2);
 }
 
 

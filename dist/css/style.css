@@ -80,17 +80,17 @@ a {
   color: var(--gray-1);
 }
 
-.slider-container {
-  width: 100%;
-  border: var(--gray-1) solid 1px;
-}
+
 
 
 
 .slider-container {
   position: relative;
   display: flex;
+  width: 100%;
+  height: auto;
 }
+
 
 .slider {
   position: relative;
