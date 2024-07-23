@@ -111,3 +111,19 @@ searchBtn?.addEventListener('click', function () {
   }
 
 })
+
+
+//handle user menu on user icon click
+const userMenu = document.querySelector('.user-menu');
+const userBtn = document.querySelector('.btn-user');
+
+
+userBtn?.addEventListener('click', function () {
+
+  if (userMenu?.classList.contains('show-menu')) {
+    userMenu?.classList.remove('show-menu')
+  } else {
+    userMenu?.classList.add('show-menu')
+  }
+
+})
