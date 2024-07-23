@@ -101,7 +101,7 @@
 }
 
 .show.form-search {
-  display: flex;
+  visibility: visible;
   transform: translateY(0%);
   transition: 1s;
 }
@@ -137,14 +137,13 @@
   position: relative;
   display: flex;
   align-items: center;
-  background-color: darkcyan;
 }
 
 .form-search {
   position: absolute;
   top: 120%;
   right: 60%;
-  display: none;
+  display: flex;
   align-items: center;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   padding: 0.1rem;
@@ -152,8 +151,9 @@
   height: 3rem;
   z-index: 99;
   background-color: white;
-  transform: translateY(45%);
+  transform: translateY(50%);
   transition: 1s;
+  visibility: hidden;
 }
 
 .input-control {
