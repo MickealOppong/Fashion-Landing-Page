@@ -8,7 +8,8 @@
   ---font-1: 0.85rem;
   ---font-2: 1.2rem;
   ---font-3: 1.5rem;
-  --maxWith: 90vw;
+  --maxWith-1: 90vw;
+  --maxWith-2: 80vw;
 }
 
 body {
@@ -39,6 +40,7 @@ a {
 .banner-container {
   display: flex;
   min-height: 80vh;
+  max-width: var(--maxWith-1);
   width: 90vw;
   margin: 0 auto;
 }
@@ -210,7 +212,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: var(--maxWith);
+  max-width: var(--maxWith-1);
   width: 100%;
   margin: 1rem auto;
   border-top: var(--gray-1) groove 0.5px;
@@ -312,7 +314,7 @@ footer {
 
 .collections {
   display: flex;
-  max-width: var(--maxWith);
+  max-width: var(--maxWith-2);
   width: 100%;
   margin: 5rem auto;
   gap: 1rem;
@@ -449,7 +451,7 @@ footer {
 .trends {
   display: flex;
   flex-direction: column;
-  max-width: 90vw;
+  max-width: var(--maxWith-2);
   margin: 5rem auto;
 }
 
@@ -539,7 +541,7 @@ footer {
 .trending-products {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  max-width: var(--maxWith);
+  max-width: var(--maxWith-2);
   column-gap: 1rem;
   margin: 5rem auto;
   margin-bottom: 20rem;
@@ -684,7 +686,7 @@ footer {
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: var(--maxWith);
+  max-width: var(--maxWith-1);
   width: 100%;
   margin: 2rem auto;
 }
@@ -772,7 +774,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: var(--maxWith);
+  max-width: var(--maxWith-2);
   margin: 5rem auto;
   column-gap: 5rem;
 
