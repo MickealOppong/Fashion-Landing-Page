@@ -114,9 +114,9 @@ searchBtn?.addEventListener('click', function () {
 
 
 //handle user menu on user icon click
-const userMenu = document.querySelector('.user-menu');
+const userMenu = document.querySelector('.user-menu') as HTMLDivElement;
 const userBtn = document.querySelector('.btn-user');
-
+//const navCenter = document.querySelector('.nav-c') as HTMLDivElement
 
 userBtn?.addEventListener('click', function () {
 
@@ -127,3 +127,17 @@ userBtn?.addEventListener('click', function () {
   }
 
 })
+
+
+window.addEventListener('mouseover', function (e: MouseEvent) {
+
+  const dim = userMenu.getBoundingClientRect();
+
+  let left = dim.left;
+  let right = dim.right;
+  let bottom = dim.bottom;
+  if ((e.pageX < left) || (e.pageX > right) || (e.pageY > bottom)) {
+    userMenu?.classList.remove('show-menu')
+  }
+
+});
