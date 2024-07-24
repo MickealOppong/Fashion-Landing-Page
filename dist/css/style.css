@@ -31,17 +31,11 @@ a {
   text-decoration: none;
 }
 
-.btn {
-  font: var(---font-2);
-}
-
-
 
 .banner-container {
   display: flex;
   min-height: 40vh;
   max-width: var(--maxWith-1);
-  width: 90vw;
   margin: 0 auto;
 }
 
@@ -128,7 +122,7 @@ a {
 
 .slider-btns {
   position: absolute;
-  top: 30%;
+  top: 80%;
   left: 20%;
   display: flex;
   column-gap: 1rem;
@@ -318,35 +312,36 @@ footer {
   height: 3rem;
 }
 
+.collection-container {
+  display: flex;
+  flex-direction: column;
+  max-width: var(--maxWith-1);
+  margin: 5rem auto;
+}
 
 .collections {
   display: flex;
   flex-direction: column;
-  max-width: var(--maxWith-2);
-  width: 100%;
-  margin: 5rem auto;
-  gap: 1rem;
+  row-gap: 1rem;
 }
 
 .women-collections {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
+
 
 .women-text-container {
   position: absolute;
-  top: 70%;
+  top: 50%;
   left: 10%;
 }
 
 .men-collections {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  flex-direction: column;
   gap: 1rem;
-  width: 100%;
-
 }
 
 
@@ -354,16 +349,9 @@ footer {
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: rgb(236, 237, 238);
-  width: 100%;
 
 }
 
-.men img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 .men-text-container {
   position: absolute;
@@ -371,26 +359,26 @@ footer {
   left: 10%;
 }
 
-.kids-collections {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  column-gap: 1rem;
+.men-img,
+.women-img,
+.kids-img {
   width: 100%;
-  height: 100%;
+  height: 18rem;
+}
+
+.kids-collections {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+
 }
 
 
 .kids {
   position: relative;
   display: flex;
-  flex-direction: column;
 }
 
-
-.kids img {
-  width: 100%;
-  height: 100%;
-}
 
 .kids-text-container {
   position: absolute;
@@ -403,7 +391,9 @@ footer {
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: #f3e7e5;
+  background-color: lightpink;
+  width: 100%;
+  height: 18rem;
 }
 
 .card-text-container {
@@ -423,7 +413,7 @@ footer {
   background-color: transparent;
   border-color: transparent;
   border: black solid 1px;
-  width: 8rem;
+  width: 9rem;
   height: 2rem;
 }
 
@@ -459,7 +449,7 @@ footer {
 .trends {
   display: flex;
   flex-direction: column;
-  max-width: var(--maxWith-2);
+  max-width: var(--maxWith-1);
   margin: 5rem auto;
 }
 
@@ -548,9 +538,9 @@ footer {
 
 .trending-products {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  max-width: var(--maxWith-2);
-  column-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: var(--maxWith-1);
+  gap: 1rem;
   margin: 5rem auto;
 
 }
@@ -560,12 +550,11 @@ footer {
   flex-direction: column;
   position: relative;
   background-color: white;
-  width: 19vw;
+  width: 14rem
 }
 
 .product img {
-  width: 19vw;
-
+  width: 14rem;
 }
 
 .product-info {
@@ -637,9 +626,9 @@ footer {
 }
 
 .price {
-  color: var(--gray-1);
-  font-weight: 100;
-  margin-top: 10px;
+  color: black;
+  font-weight: 300;
+  margin-top: 20px;
 }
 
 .cart-btn-container {
@@ -840,16 +829,18 @@ footer {
     left: 20%;
   }
 
+  .collection-container {
+    max-width: var(--maxWith-2);
+  }
+
   .collections {
     display: flex;
     flex-direction: row;
-    width: 100%;
   }
 
   .women-collections {
     background-color: #00ff00;
   }
-
 
   .women-collections img {
     width: 100%;
