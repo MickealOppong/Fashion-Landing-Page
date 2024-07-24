@@ -332,7 +332,6 @@ footer {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
 
 .women-text-container {
@@ -844,14 +843,18 @@ footer {
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: 100%;
   }
 
   .women-collections {
     width: 50%;
+    background-color: #00ff00;
   }
+
 
   .men {
     display: flex;
+    height: 100%;
   }
 
   .kids-collections {
