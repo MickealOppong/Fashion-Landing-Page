@@ -39,7 +39,7 @@ a {
 
 .banner-container {
   display: flex;
-  min-height: 80vh;
+  min-height: 40vh;
   max-width: var(--maxWith-1);
   width: 90vw;
   margin: 0 auto;
@@ -96,7 +96,6 @@ a {
   position: relative;
   display: flex;
   width: 100%;
-  height: 85vh;
 }
 
 
@@ -119,7 +118,7 @@ a {
 }
 
 .slide img {
-  width: 100%;
+  width: 50vh;
 }
 
 .slide-content {
@@ -839,5 +838,33 @@ footer {
   .slider-btns {
     top: 80%;
     left: 20%;
+  }
+
+  .collections {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .women-collections {
+    width: 50%;
+  }
+
+  .men {
+    display: flex;
+  }
+
+  .kids-collections {
+    display: flex;
+  }
+
+  .kids {
+    display: flex;
+    width: 100%;
+  }
+
+  .e-cards {
+    display: flex;
+    width: 100%;
   }
 }

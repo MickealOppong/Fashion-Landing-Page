@@ -32,15 +32,18 @@ export let navData: navMenu = [
 export const images: Image[] = [
   {
     id: 1,
-    url: 'https://images.unsplash.com/photo-1720811118401-0c947249988c?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    url: 'https://images.unsplash.com/photo-1720811118401-0c947249988c?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    colour: '#ADD8E6'
   },
   {
     id: 2,
-    url: 'https://images.unsplash.com/photo-1721146609543-491c1ec04240?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    url: 'https://images.unsplash.com/photo-1721146609543-491c1ec04240?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    colour: '#008B8B'
   },
   {
     id: 3,
-    url: 'https://images.unsplash.com/photo-1720983415059-43ec4007cf97?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    url: 'https://images.unsplash.com/photo-1720983415059-43ec4007cf97?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    colour: '#FFB6C1'
   }
 ]
 

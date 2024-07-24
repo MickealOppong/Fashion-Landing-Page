@@ -10,8 +10,7 @@ const dotBtns: NodeListOf<HTMLDivElement> = document.querySelectorAll('.dot-btn'
 document.title = 'seahorse'.toUpperCase();
 
 const slides = images.map((item,) => {
-  return `<div class="slide">
-   <img class="slide-img"  src=${item.url} alt="">
+  return `<div class="slide"  style="background-color: ${item.colour};">
    <div class="slide-content">
     <p>slide ${item.id}</p>
     </div>
