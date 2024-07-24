@@ -845,6 +845,10 @@ footer {
     width: 100%;
   }
 
+  .women-collections {
+    background-color: #00ff00;
+  }
+
   .men {
     display: flex;
   }
