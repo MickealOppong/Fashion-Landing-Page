@@ -133,8 +133,12 @@ function loadProducts(category: string) {
   const trendProducts = trend?.products.map((product) => {
     const { name, img, price, colour, size } = product;
     return `<div class="product">
-                   <img
-                   src="${img}" alt="">
+                  <div class="product-img-container">
+                   <img class="product-img" src="${img}" alt="">
+                   <div class="cart-btn-container">
+                   <button class="cart-btn">add to cart</button>
+                   </div>
+                  </div>
                    <div class="product-info">
                     <p>${name}</p>
                     <div class="product-size">
@@ -149,10 +153,6 @@ function loadProducts(category: string) {
                     </div>
                     <span class="price">&#36;${price}</span>
                    </div>
-
-                   <div class="cart-btn-container">
-                   <button class="cart-btn">add to cart</button>
-                   </div>
                   </div>
                   `
   }).join('')
@@ -166,6 +166,7 @@ function loadProducts(category: string) {
 }
 
 loadProducts(selectedItem)
+
 
 
 // handle click event to change active product size and colour

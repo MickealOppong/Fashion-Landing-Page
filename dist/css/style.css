@@ -548,13 +548,19 @@ footer {
 .product {
   display: flex;
   flex-direction: column;
-  position: relative;
   background-color: white;
   width: 43vw;
 }
 
-.product img {
+
+.product-img-container {
+  position: relative;
+  display: flex;
+}
+
+.product-img {
   width: 43vw;
+  height: auto;
 }
 
 .product-info {
@@ -632,8 +638,8 @@ footer {
 }
 
 .cart-btn-container {
-  position: sticky;
-  top: 0;
+  position: absolute;
+  top: 80%;
   display: flex;
   align-items: center;
   width: 100%;
