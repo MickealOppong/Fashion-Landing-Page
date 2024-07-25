@@ -34,7 +34,7 @@ a {
 
 .banner-container {
   display: flex;
-  min-height: 80vh;
+  min-height: 40vh;
   max-width: var(--maxWith-1);
   margin: 0 auto;
 }
@@ -832,6 +832,11 @@ footer {
 }
 
 @media screen and (min-width:992px) {
+
+  .banner-container {
+    min-height: 85vh;
+  }
+
   .social {
     display: none;
   }
