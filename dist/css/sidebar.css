@@ -8,6 +8,7 @@
   background-color: lightpink;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
   z-index: 100;
+  visibility: hidden;
 }
 
 .sidebar {
@@ -30,9 +31,11 @@
 .show {
   transform: translateX(0%);
   transition: 0.5s;
+  visibility: visible;
 }
 
 .hide {
+  visibility: hidden;
   transform: translateX(-150%);
   transition: 0.5s;
 }
