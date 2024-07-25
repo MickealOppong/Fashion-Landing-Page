@@ -1,3 +1,5 @@
+import { navData } from "./data"
+
 let sidebarContainer = document.querySelector('.sidebar-container') as HTMLDivElement
 
 let sidebar = document.querySelector('.sidebar') as HTMLDivElement
@@ -21,7 +23,27 @@ closeBtn.addEventListener('click', function () {
   if (sidebarContainer.classList.contains('show')) {
     sidebarContainer.classList.remove('show')
   }
-  console.log('ll');
-
 }
 )
+
+//handle sidebar menu
+const ul = document.createElement('ul');
+
+let sidebarItems = navData.map((item, index) => {
+
+  return ` <li class="sidebar-link">
+            <a  href=${item.url} target="_blank" class="nav-link">${item.title}</a>
+            <i class="la la-angle-right"></i>
+            <div>
+            <ul>
+           ${item.menu?.map((link) => {
+    return `<li>${link}</li>`
+  }).join('')}
+            </ul>
+            </div>
+            </li>`
+}).join('')
+ul.innerHTML = sidebarItems;
+
+sidebar.append(ul);
+
