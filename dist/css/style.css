@@ -449,7 +449,8 @@ footer {
 .trends {
   display: flex;
   flex-direction: column;
-  max-width: var(--maxWith-1);
+  align-items: center;
+  max-width: var(--maxWith-2);
   margin: 5rem auto;
 }
 
@@ -539,17 +540,17 @@ footer {
 .trending-products {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  max-width: var(--maxWith-1);
   gap: 1rem;
-  margin: 5rem auto;
+  margin: 4rem auto;
 
 }
 
 .product {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: white;
-  width: 43vw;
+  width: 42vw;
 }
 
 
@@ -559,8 +560,8 @@ footer {
 }
 
 .product-img {
-  width: 43vw;
-  height: auto;
+  width: 42vw;
+  height: 35vh;
 }
 
 .product-info {
@@ -639,11 +640,15 @@ footer {
 
 .cart-btn-container {
   position: absolute;
-  top: 80%;
+  top: 250;
+  left: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
+
 }
+
 
 
 .cart-btn {
@@ -695,18 +700,18 @@ footer {
 }
 
 .img-container {
-  height: 30rem;
+  height: 20rem;
   background-color: rgba(226, 230, 231, 0.7);
 }
 
 .deal img {
-  width: 85vw;
-  height: 30rem;
+  width: 90vw;
+  height: 20rem;
 }
 
 .deal-content {
   position: absolute;
-  top: 40%;
+  top: 20%;
   left: 10%;
   display: flex;
   flex-direction: column;
@@ -731,15 +736,16 @@ footer {
 }
 
 .deal-content h2 {
-  font-size: 4rem;
+  font-size: 2rem;
   text-transform: uppercase;
-  margin-top: -0.5rem;
+  margin-top: 1rem;
 }
 
 .deal-link-container {
   display: flex;
   flex-direction: column;
   justify-content: left;
+  margin-top: 1rem;
 }
 
 .deals-link {
@@ -871,21 +877,39 @@ footer {
     width: 100%;
   }
 
+  .trends {
+    max-width: var(--maxWith-1);
+  }
+
   .trending-products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    max-width: var(--maxWith-2);
   }
 
   .product {
     width: 20rem;
+
   }
 
   .product img {
     width: 20rem;
+    height: 20rem;
+    object-fit: cover;
   }
 
-  .cart-btn {
-    width: 20rem;
+
+  .img-container {
+    height: 30rem;
   }
+
+  .deal img {
+    width: 85vw;
+    height: 30rem;
+  }
+
+  .deal-content h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+
 }
