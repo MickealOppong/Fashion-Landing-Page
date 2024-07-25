@@ -276,14 +276,13 @@ footer {
 
 
 .input-container {
-  width: 25rem;
-  border: var(--gray-1) solid 1px;
+  width: 20rem;
 }
 
 .input {
   text-indent: 15px;
   outline: none;
-  width: 20rem;
+  width: 15rem;
   height: 3rem;
 }
 
@@ -292,11 +291,14 @@ footer {
 }
 
 .join-btn {
-  font-size: var(---font-2);
+  width: 3rem;
+  height: 3rem;
+  font-size: var(---font-1);
   text-transform: uppercase;
-  background-color: transparent;
+  background-color: darkcyan;
   border-color: transparent;
-  color: darkcyan;
+  color: white;
+  border-radius: 50%;
   cursor: pointer;
 }
 
@@ -473,7 +475,7 @@ footer {
 
 .trend-btns {
   display: flex;
-  column-gap: 2rem;
+  column-gap: 1rem;
   margin-top: 1rem;
 }
 
