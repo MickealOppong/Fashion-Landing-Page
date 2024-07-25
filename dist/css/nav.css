@@ -151,7 +151,7 @@ nav {
 .form-search {
   position: absolute;
   top: 120%;
-  right: -200%;
+  right: -300%;
   display: flex;
   align-items: center;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -172,6 +172,7 @@ nav {
   outline: none;
   text-indent: 10px;
   height: 3rem;
+  background-color: white;
 }
 
 .form-search button {
