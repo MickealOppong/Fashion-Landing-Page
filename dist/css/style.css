@@ -861,7 +861,7 @@ footer {
   }
 
   .women-collections {
-    width: 50vw;
+    width: 60vw;
   }
 
   .women-collections img {
@@ -871,6 +871,8 @@ footer {
 
   .men {
     display: flex;
+    width: 40vw;
+    height: 100%;
   }
 
   .kids-collections {
