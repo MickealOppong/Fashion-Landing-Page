@@ -511,7 +511,7 @@ footer {
   opacity: 1;
 }
 
-.new-arrival:hover .new-arrival-btn,
+.new-arrivals:hover .new-arrival-btn,
 .best-sellers:hover .best-sellers-btn,
 .top-rating:hover .top-rating-btn {
   color: black;
