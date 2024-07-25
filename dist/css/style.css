@@ -450,7 +450,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: var(--maxWith-2);
+  max-width: var(--maxWith-1);
   margin: 5rem auto;
 }
 
@@ -561,7 +561,7 @@ footer {
 
 .product-img {
   width: 42vw;
-  height: 35vh;
+  height: 40vh;
 }
 
 .product-info {
@@ -640,7 +640,7 @@ footer {
 
 .cart-btn-container {
   position: absolute;
-  top: 250;
+  top: 260;
   left: 0;
   display: flex;
   align-items: center;
@@ -878,7 +878,7 @@ footer {
   }
 
   .trends {
-    max-width: var(--maxWith-1);
+    max-width: var(--maxWith-2);
   }
 
   .trending-products {
@@ -887,13 +887,13 @@ footer {
   }
 
   .product {
-    width: 20rem;
+    width: 20vw;
 
   }
 
   .product img {
-    width: 20rem;
-    height: 20rem;
+    width: 20vw;
+    height: 40vh;
     object-fit: cover;
   }
 

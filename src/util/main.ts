@@ -167,15 +167,6 @@ function loadProducts(category: string) {
 
 loadProducts(selectedItem)
 
-//get product container dimension and set position of add to car button
-const trends = document.querySelector('.trends') as HTMLDivElement
-
-window.addEventListener('mouseover', function (e) {
-  const elem = e.target;
-  console.log(elem);
-
-})
-
 
 
 // handle click event to change active product size and colour
