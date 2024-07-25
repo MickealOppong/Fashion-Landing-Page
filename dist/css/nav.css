@@ -62,7 +62,7 @@ nav {
 
 .nav-user {
   display: flex;
-  column-gap: 1rem;
+  align-items: center;
 }
 
 .underline {
@@ -150,7 +150,7 @@ nav {
 .form-search {
   position: absolute;
   top: 120%;
-  right: -400%;
+  right: -200%;
   display: flex;
   align-items: center;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -180,6 +180,7 @@ nav {
 
 .user-container {
   position: relative;
+  display: inline;
 }
 
 .user-menu {
