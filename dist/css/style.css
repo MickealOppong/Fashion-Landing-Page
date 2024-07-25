@@ -783,9 +783,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: var(--maxWith-2);
+  max-width: var(--maxWith-1);
   margin: 5rem auto;
-  column-gap: 5rem;
+  gap: 2rem;
 
 }
 
@@ -794,6 +794,10 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.child:nth-child(2) {
+  display: none;
 }
 
 .child i {
@@ -912,4 +916,8 @@ footer {
     text-transform: uppercase;
   }
 
+
+  .child:nth-child(2) {
+    display: flex;
+  }
 }
