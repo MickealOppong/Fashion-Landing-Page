@@ -64,6 +64,7 @@ nav {
 .nav-user {
   display: flex;
   align-items: center;
+  background-color: #B96A59;
 }
 
 .underline {
