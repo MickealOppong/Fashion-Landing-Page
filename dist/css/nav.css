@@ -40,11 +40,11 @@ nav {
   display: none;
   color: darkcyan;
   font-style: italic;
+  font-size: 2rem;
 }
 
 .logo span {
   color: darkolivegreen;
-
 }
 
 .link a {
