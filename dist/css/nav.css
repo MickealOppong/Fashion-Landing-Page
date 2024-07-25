@@ -37,7 +37,7 @@ nav {
 }
 
 .logo {
-  display: inline;
+  display: none;
   color: darkcyan;
   font-style: italic;
 }
