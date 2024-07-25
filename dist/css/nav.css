@@ -1,8 +1,14 @@
+nav {
+  display: flex;
+  width: 100vw;
+}
+
 .nav-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: var(--maxWith-2);
+  width: 100%;
   margin: 0 auto;
   padding: 0.5rem;
 }
