@@ -1,13 +1,14 @@
 nav {
   display: flex;
-  width: 100vw;
+  width: 90vw;
+  margin: 0 auto;
 }
 
 .nav-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: var(--maxWith-2);
+  max-width: var(--maxWith-1);
   width: 100%;
   margin: 0 auto;
   padding: 0.5rem;
