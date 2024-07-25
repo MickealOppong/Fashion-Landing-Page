@@ -291,6 +291,9 @@ footer {
 }
 
 .join-btn {
+  display: inline;
+  align-items: center;
+  justify-content: center;
   width: 3rem;
   height: 3rem;
   font-size: var(---font-1);
