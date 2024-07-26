@@ -1,31 +1,41 @@
 .sidebar-container {
   position: fixed;
   display: flex;
+  flex-direction: column;
   top: 0;
   left: 0;
   width: 20rem;
   min-height: 100vh;
-  background-color: lightpink;
+  background-color: white;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
   z-index: 100;
   visibility: hidden;
 }
 
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 0 1rem 0 1rem;
+}
+
 .sidebar {
   display: flex;
+  width: 18rem;
+  margin: 0 auto;
+
 }
 
 .closeBtn-container {
-  position: absolute;
-  top: 10;
-  right: 10;
+  display: flex;
 }
 
 .close-btn {
   background-color: transparent;
   border-color: transparent;
   font-size: var(---font);
-  color: rgb(195, 201, 203);
+  color: white;
 }
 
 .show {
@@ -38,6 +48,56 @@
   visibility: hidden;
   transform: translateX(-150%);
   transition: 0.5s;
+}
+
+
+.sidebar-link {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 18rem;
+}
+
+.sidebar-link a {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggle-btn {
+  background-color: transparent;
+  border-color: transparent;
+  color: black;
+  cursor: pointer;
+}
+
+.child-menu-container {
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+
+.show-child {
+  height: 4rem;
+  transition: 0.5s;
+}
+
+.child-menu {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.child-menu-link {
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (min-width:992px) {

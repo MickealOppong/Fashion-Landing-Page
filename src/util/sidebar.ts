@@ -32,12 +32,15 @@ const ul = document.createElement('ul');
 let sidebarItems = navData.map((item, index) => {
 
   return ` <li class="sidebar-link">
-            <a  href=${item.url} target="_blank" class="nav-link">${item.title}</a>
-            <i class="la la-angle-right"></i>
-            <div>
-            <ul>
+            <div class="menu">
+            <a  href=${item.url} target="_blank" class="nav-link">${item.title}
+            </a>
+            <button class="toggle-btn"> <i class="la la-angle-right"></i></button>
+            </div>
+            <div class="child-menu-container">
+            <ul class="child-menu">
            ${item.menu?.map((link) => {
-    return `<li>${link}</li>`
+    return `<li class="child-menu-link">  <a  href="" target="_blank" >${link}</a></li>`
   }).join('')}
             </ul>
             </div>
@@ -47,3 +50,26 @@ ul.innerHTML = sidebarItems;
 
 sidebar.append(ul);
 
+const toggleBtns: NodeListOf<HTMLElement> = document.querySelectorAll('.toggle-btn')
+
+toggleBtns.forEach((btn) => {
+  btn.addEventListener('click', function (e) {
+    const elem = e.currentTarget;
+    if (elem instanceof Element) {
+      const parent = elem.parentElement;
+      const childMenu = parent?.nextElementSibling;
+
+      let childMenuHeight = childMenu?.getBoundingClientRect().height;
+      let childrenElemContainerHeight = childMenu?.firstElementChild?.getBoundingClientRect().height;
+      if (childMenu instanceof HTMLElement) {
+        if (childMenuHeight === 0) {
+          childMenu.style.height = `${childrenElemContainerHeight}px`
+        } else {
+          childMenu.style.height = `${0}px`
+        }
+      }
+
+    }
+
+  })
+})
