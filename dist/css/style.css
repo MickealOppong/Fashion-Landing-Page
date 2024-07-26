@@ -121,6 +121,11 @@ a {
   left: 10%;
 }
 
+.slide-content h2 {
+  font-size: 4rem;
+  margin-top: -1rem;
+}
+
 .slider-btns {
   position: absolute;
   top: 80%;

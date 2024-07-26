@@ -59,7 +59,7 @@ middleBtn.addEventListener('click', function () {
 function carousel(position: number) {
   slideList.forEach((slide, index) => {
     slide.style.transform = `translateX(-${position * 100}%)`;
-    slide.style.transition = `2s`;
+    slide.style.transition = `1s`;
   })
 }
 

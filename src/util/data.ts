@@ -33,14 +33,14 @@ export const images: Image[] = [
   {
     id: 1,
     title: 'new trend',
-    text: 'summer sale stylist',
+    text: 'Summer sale stylist',
     colour: '#B1D4E0',
     url: ''
   },
   {
     id: 2,
     title: 'all skin types',
-    text: 'Power Skincare! At one with the planet',
+    text: 'Power Skincare! </br>At one with the planet',
     colour: '#e2cfea',
     url: ''
   }
