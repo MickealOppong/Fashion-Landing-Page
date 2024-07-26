@@ -117,7 +117,8 @@ a {
 
 .slide-content {
   position: absolute;
-  top: 0;
+  top: 20%;
+  left: 10%;
 }
 
 .slider-btns {
@@ -853,6 +854,11 @@ footer {
   .slider-btns {
     top: 80%;
     left: 20%;
+  }
+
+  .slide-content {
+    position: absolute;
+    top: 30%;
   }
 
   .collection-container {

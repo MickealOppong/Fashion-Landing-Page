@@ -3,16 +3,25 @@ import { deals, images, trendingProducts } from "./data";
 
 const slider = document.querySelector('.slider') as HTMLElement
 const leftBtn = document.querySelector('.left-btn') as HTMLElement
-const middleBtn = document.querySelector('.middle-btn') as HTMLElement
+//const middleBtn = document.querySelector('.middle-btn') as HTMLElement
 const rightBtn = document.querySelector('.right-btn') as HTMLElement
 const dotBtns: NodeListOf<HTMLDivElement> = document.querySelectorAll('.dot-btn')
 
 document.title = 'seahorse'.toUpperCase();
 
 const slides = images.map((item,) => {
-  return `<div class="slide"  style="background-color: ${item.colour};">
+  const { id, title, text, url, colour } = item;
+  return `<div class="slide"  style="background-color: ${colour};">
    <div class="slide-content">
-    <p>slide ${item.id}</p>
+    <div class="title-container">
+  <span></span>
+  <p>${title}</p>
+</div>
+    <h2>${text}</h2>
+        <div class="deal-link-container">
+       <a  class="deals-link" href="${url}" target="_blank">shop now</a>
+      <div class="btn-underline"></div>
+      </div>
     </div>
     </div>`
 }).join('')
@@ -28,21 +37,23 @@ slideList.forEach(function (slide, index) {
 })
 
 
+
 leftBtn.addEventListener('click', function () {
   counter = 0;
   carousel(counter);
 })
 
 rightBtn.addEventListener('click', function () {
-  counter = 2;
+  counter = 1;
   carousel(counter);
 })
-
+/*
 
 middleBtn.addEventListener('click', function () {
   counter = 1;
   carousel(counter);
 })
+  */
 
 //determines which carousel is displayed
 function carousel(position: number) {
@@ -69,8 +80,10 @@ dotBtns.forEach((item) => {
 
 //automatically change slides every 5 seconds
 function changeSlide() {
-  let randomIndex: number = Math.floor(Math.random() * 2);
+
   const interval = setInterval(() => {
+    let randomIndex: number = Math.floor(Math.random() * 2);
+
     carousel(randomIndex)
     dotBtns.forEach((btn, index) => {
       if (index === randomIndex) {
