@@ -117,12 +117,12 @@ a {
 
 .slide-content {
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 10%;
 }
 
 .slide-content h2 {
-  font-size: 4rem;
+  font-size: 2rem;
   margin-top: -1rem;
 }
 
@@ -731,6 +731,7 @@ footer {
   display: flex;
   align-items: center;
   column-gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 
@@ -743,6 +744,7 @@ footer {
   width: 3rem;
   height: 3px;
   background-color: rgb(197, 46, 46);
+
 }
 
 .deal-content h2 {
@@ -755,7 +757,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .deals-link {
@@ -864,6 +866,12 @@ footer {
   .slide-content {
     position: absolute;
     top: 30%;
+  }
+
+
+  .slide-content h2 {
+    font-size: 4rem;
+    margin-top: -1rem;
   }
 
   .collection-container {
