@@ -61,6 +61,8 @@ toggleBtns.forEach((btn) => {
 
       let childMenuHeight = childMenu?.getBoundingClientRect().height;
       let childrenElemContainerHeight = childMenu?.firstElementChild?.getBoundingClientRect().height;
+
+
       if (childMenu instanceof HTMLElement) {
         if (childMenuHeight === 0) {
           childMenu.style.height = `${childrenElemContainerHeight}px`
@@ -68,8 +70,13 @@ toggleBtns.forEach((btn) => {
           childMenu.style.height = `${0}px`
         }
       }
-
+      const childMenus = document.querySelectorAll('.child-menu-container')
+      //console.log(childMenus);
+      childMenus.forEach((child) => {
+        if (child !== childMenu && child instanceof HTMLElement) {
+          child.style.height = `${0}px`
+        }
+      })
     }
-
   })
 })
