@@ -1,7 +1,6 @@
 header {
   display: flex;
   align-items: center;
-  max-width: var(---maxW-1);
   background-color: black;
 
 }
@@ -10,6 +9,7 @@ header {
 .header-ad {
   display: flex;
   align-items: center;
+  max-width: var(---maxW-1);
   margin: 0 auto;
 }
 

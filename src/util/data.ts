@@ -33,7 +33,7 @@ export const images: Image[] = [
   {
     id: 1,
     title: 'new trend',
-    text: 'Summer sale stylist',
+    text: 'Summer sale stylist'.toUpperCase(),
     colour: '#B1D4E0',
     url: ''
   },
