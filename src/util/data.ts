@@ -40,7 +40,7 @@ export const images: Image[] = [
   {
     id: 2,
     title: 'all skin types',
-    text: 'Power Skincare! </br>At one with the planet',
+    text: 'Powerful Skincare! </br>At one with the planet',
     colour: '#e2cfea',
     url: ''
   }
