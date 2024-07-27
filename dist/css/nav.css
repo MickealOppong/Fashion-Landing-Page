@@ -81,6 +81,7 @@ nav {
 
 .nav-menu {
   display: flex;
+  column-gap: 4rem;
 }
 
 
@@ -180,11 +181,6 @@ nav {
 
 }
 
-.nav-menu {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 50px;
-}
 
 .hide-icon {
   visibility: hidden;
