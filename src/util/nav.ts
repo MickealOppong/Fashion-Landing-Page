@@ -56,37 +56,39 @@ links.forEach((link) => {
 
       if (title) {
         return `
-      <p>${title}</p>
-      <div>
-      <ul>
-      <li>${links.map((link) => {
-          return `<a href=${link.url}>${link.text
-            }</a>`
-        }).join('')}</li>
-      </ul>
-      </div>
+        <div>
+          <p>${title}</p>
+          <ul>
+              ${links.map((link) => {
+          return `
+          <li class="link"><a  class="nav-link" href=${link.url}>${link.text
+            }</a></li>
+          `}).join('')}
+          </ul>
+          </div>
       `
       } else {
         return `
-      <div>
-      <ul>
-      <li>${links.map((link) => {
-          return `<a href=${link.url}>${link.text
-            }</a>`
-        }).join('')}</li>
-      </ul>
-      </div>
+        <div>
+          <ul>
+              ${links.map((link) => {
+          return `
+          <li class="link"><a  class="nav-link" href=${link.url}>${link.text
+            }</a></li>
+          `}).join('')}
+          </ul>
+          </div>
       `
       }
     }).join('')
 
-    let ulMenu = navMenuContainer.querySelector('.nav-menu') as Element
+    let navMenu = navMenuContainer.querySelector('.nav-menu') as Element
 
     if (menu === undefined) {
       navMenuContainer.style.visibility = 'hidden'
       return
     } else {
-      ulMenu.innerHTML = menu;
+      navMenu.innerHTML = menu;
     }
 
     let dim = link.getBoundingClientRect();
