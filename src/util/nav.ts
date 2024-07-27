@@ -43,6 +43,8 @@ links.forEach((link) => {
 
 
 // function to load the content of each nav link.
+
+
 links.forEach((link) => {
   link.addEventListener('mouseover', function () {
     const selected = link.querySelector('a')?.textContent
@@ -50,7 +52,6 @@ links.forEach((link) => {
     const selectedMenu = navData.find((item) => item.title === selected)
 
     const menu = selectedMenu?.menu?.map((item) => {
-      console.log(item);
 
       const { title, links } = item;
 
@@ -66,6 +67,7 @@ links.forEach((link) => {
           `}).join('')}
           </ul>
           </div>
+          <div>
       `
       } else {
         return `

@@ -13,6 +13,11 @@ export let navData: navMenu = [
   {
     title: 'shop',
     url: 'https://mikeoppong.netlify.app',
+    deal: [{
+      title: 'basic collections',
+      text: 'new arrivals',
+      img: 'https://images.unsplash.com/photo-1484327973588-c31f829103fe?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D'
+    }],
     menu: [
       {
         title: 'product category',

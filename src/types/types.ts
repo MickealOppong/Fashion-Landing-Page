@@ -1,10 +1,16 @@
 type Link = {
   url: string, text: string
 }
+type Deal = {
+  title: string,
+  text: string,
+  img: string
+}
 export type navMenu = [
   {
     title: string,
     url: string,
+    deal?: Deal[],
     menu?: [
       {
         title?: string,
@@ -14,6 +20,7 @@ export type navMenu = [
   {
     title: string,
     url: string,
+    deal?: Deal[],
     menu?: [
       {
         title?: string,
@@ -23,11 +30,12 @@ export type navMenu = [
         title?: string,
         links: Link[]
       }
-    ]
+    ],
   },
   {
     title: string,
     url: string,
+    deal?: Deal[],
     menu?: [
       {
         title?: string,
@@ -38,6 +46,7 @@ export type navMenu = [
   {
     title: string,
     url: string,
+    deal?: Deal[],
     menu?: [{
       title?: string,
       links: Link[]
@@ -46,6 +55,7 @@ export type navMenu = [
   {
     title: string,
     url: string,
+    deal?: Deal[],
     menu?: [{
       title?: string,
       links: Link[]
