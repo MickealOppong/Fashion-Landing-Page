@@ -79,6 +79,35 @@ nav {
   color: var(---secondary);
 }
 
+.nav-menu {
+  display: flex;
+}
+
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-container p {
+  text-transform: uppercase;
+  color: var(---gray-1);
+}
+
+.menu-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-link {
+  line-height: 2rem;
+}
+
+
+.menu-link a {
+  text-transform: capitalize;
+  color: var(---gray-1);
+}
 
 .nav-user {
   display: flex;
@@ -283,6 +312,9 @@ nav {
 .ads {
   display: none;
 }
+
+
+
 
 @media screen and (min-width:992px) {
   .hamburger-container {

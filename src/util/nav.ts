@@ -44,6 +44,8 @@ links.forEach((link) => {
 
 // function to load the content of each nav link.
 
+const adsContainer = document.querySelector('.ads-container') as HTMLDivElement
+
 
 links.forEach((link) => {
   link.addEventListener('mouseover', function () {
@@ -51,31 +53,30 @@ links.forEach((link) => {
 
     const selectedMenu = navData.find((item) => item.title === selected)
 
-    const menu = selectedMenu?.menu?.map((item) => {
 
+    const menu = selectedMenu?.menu?.map((item) => {
       const { title, links } = item;
 
       if (title) {
         return `
-        <div>
+        <div class="menu-container">
           <p>${title}</p>
-          <ul>
+          <ul class="menu-links">
               ${links.map((link) => {
           return `
-          <li class="link"><a  class="nav-link" href=${link.url}>${link.text
+          <li class="menu-link"><a href=${link.url}>${link.text
             }</a></li>
           `}).join('')}
           </ul>
           </div>
-          <div>
       `
       } else {
         return `
-        <div>
-          <ul>
+        <div class="menu-container">
+          <ul class="links">
               ${links.map((link) => {
           return `
-          <li class="link"><a  class="nav-link" href=${link.url}>${link.text
+          <li class="menu-link"><a  href=${link.url}>${link.text
             }</a></li>
           `}).join('')}
           </ul>
@@ -84,6 +85,8 @@ links.forEach((link) => {
       }
     }).join('')
 
+
+
     let navMenu = navMenuContainer.querySelector('.nav-menu') as Element
 
     if (menu === undefined) {
@@ -91,6 +94,7 @@ links.forEach((link) => {
       return
     } else {
       navMenu.innerHTML = menu;
+
     }
 
     let dim = link.getBoundingClientRect();

@@ -1,7 +1,7 @@
 :root {
   ---primary-1: #00ff00;
   ---secondary: #B96A59;
-  --gray-1: rgb(119, 122, 125);
+  ---gray-1: rgb(119, 122, 125);
   ---gray-2: rgb(48, 50, 51);
   ---spacing: 1px;
   ---spacing-2: 2px;
