@@ -44,16 +44,40 @@ links.forEach((link) => {
 
 // function to load the content of each nav link.
 links.forEach((link) => {
-  link.addEventListener('mouseover', function (e) {
+  link.addEventListener('mouseover', function () {
     const selected = link.querySelector('a')?.textContent
 
     const selectedMenu = navData.find((item) => item.title === selected)
 
+    const menu = selectedMenu?.menu?.map((item) => {
+      console.log(item);
 
-    const menu = selectedMenu?.menu?.map((menuItem) => {
-      return `
-      <li><a href="">${menuItem}</a></li>
-    `
+      const { title, links } = item;
+
+      if (title) {
+        return `
+      <p>${title}</p>
+      <div>
+      <ul>
+      <li>${links.map((link) => {
+          return `<a href=${link.url}>${link.text
+            }</a>`
+        }).join('')}</li>
+      </ul>
+      </div>
+      `
+      } else {
+        return `
+      <div>
+      <ul>
+      <li>${links.map((link) => {
+          return `<a href=${link.url}>${link.text
+            }</a>`
+        }).join('')}</li>
+      </ul>
+      </div>
+      `
+      }
     }).join('')
 
     let ulMenu = navMenuContainer.querySelector('.nav-menu') as Element

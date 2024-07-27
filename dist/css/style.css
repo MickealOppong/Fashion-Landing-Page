@@ -577,6 +577,7 @@ footer {
 .product-info {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .product-info p {

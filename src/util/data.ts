@@ -1,22 +1,35 @@
 import { Image } from "../types/image"
 import { Footer, navMenu } from "../types/types"
+
+
 export let navData: navMenu = [
   {
     title: 'home',
     url: 'https://mikeoppong.netlify.app',
-    menu: ['home 1', 'home 3', 'home 3']
+    menu: [
+      { links: [{ url: '', text: 'home 1' }, { url: '', text: 'home 2' }] }
+    ]
   },
   {
     title: 'shop',
     url: 'https://mikeoppong.netlify.app',
-    menu: ['product style 1', 'product style 3', 'product style 3',
-      'product style 4', 'product style 5', 'product style 6'
+    menu: [
+      {
+        title: 'product category',
+        links: [{ url: '', text: 'cosmetics' }, { url: '', text: 'perfumes' }]
+      },
+      {
+        title: 'brand category',
+        links: [{ url: '', text: 'gucci' }, { url: '', text: 'enyce' }, { url: '', text: 'reserved' }]
+      },
     ]
   },
   {
     title: 'blog',
     url: 'https://mikeoppong.netlify.app',
-    menu: ['blog list 1', 'blog list 3']
+    menu: [
+      { links: [{ url: '', text: 'blog 1' }, { url: '', text: 'blog 2' }] }
+    ]
   },
   {
     title: 'about',

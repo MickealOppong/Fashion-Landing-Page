@@ -1,28 +1,55 @@
+type Link = {
+  url: string, text: string
+}
 export type navMenu = [
   {
     title: string,
     url: string,
-    menu?: string[]
+    menu?: [
+      {
+        title?: string,
+        links: Link[]
+      }]
   },
   {
     title: string,
     url: string,
-    menu?: string[]
+    menu?: [
+      {
+        title?: string,
+        links: Link[]
+      },
+      {
+        title?: string,
+        links: Link[]
+      }
+    ]
   },
   {
     title: string,
     url: string,
-    menu?: string[]
+    menu?: [
+      {
+        title?: string,
+        links: Link[]
+      }
+    ]
   },
   {
     title: string,
     url: string,
-    menu?: string[]
+    menu?: [{
+      title?: string,
+      links: Link[]
+    }]
   },
   {
     title: string,
     url: string,
-    menu?: string[]
+    menu?: [{
+      title?: string,
+      links: Link[]
+    }]
   },
 ]
 
