@@ -42,6 +42,23 @@ links.forEach((link) => {
 })
 
 
+
+links.forEach((link) => {
+  link.addEventListener('mouseleave', function () {
+    if (link.classList.contains('active')) {
+      link.classList.remove('active')
+    }
+
+    links.forEach((item, index) => {
+      if (index === 0) {
+        item.classList.add('active')
+      }
+    })
+  }
+  )
+})
+
+
 // function to load the content of each nav link.
 
 links.forEach((link) => {
@@ -118,7 +135,7 @@ links.forEach((link) => {
 
 
     let dim = link.getBoundingClientRect();
-    navMenuContainer.style.top = `${dim.bottom + 35}`;
+    navMenuContainer.style.top = `${dim.bottom + 30}`;
     navMenuContainer.style.left = `${dim.left}`;
     navMenuContainer.style.visibility = 'visible'
 
