@@ -5,6 +5,7 @@ type Deal = {
   title: string,
   text: string,
   img: string
+  url: string
 }
 export type navMenu = [
   {

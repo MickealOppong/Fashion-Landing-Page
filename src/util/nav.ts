@@ -44,15 +44,11 @@ links.forEach((link) => {
 
 // function to load the content of each nav link.
 
-const adsContainer = document.querySelector('.ads-container') as HTMLDivElement
-
-
 links.forEach((link) => {
   link.addEventListener('mouseover', function () {
     const selected = link.querySelector('a')?.textContent
 
     const selectedMenu = navData.find((item) => item.title === selected)
-
 
     const menu = selectedMenu?.menu?.map((item) => {
       const { title, links } = item;
@@ -86,7 +82,6 @@ links.forEach((link) => {
     }).join('')
 
 
-
     let navMenu = navMenuContainer.querySelector('.nav-menu') as Element
 
     if (menu === undefined) {
@@ -94,8 +89,33 @@ links.forEach((link) => {
       return
     } else {
       navMenu.innerHTML = menu;
-
     }
+
+
+    if (selectedMenu?.title === selected) {
+      const promoContainer = document.querySelector('.active-promo') as HTMLDivElement
+
+      const promoDeal = selectedMenu?.deal?.map((deal) => {
+        return `
+      <img src=${deal.img} >
+      <div class="promo-content">
+      <h2>${deal.text}</h2>
+      <div class="promo-link-container">
+     <a  class="promo-link" href="${deal.url}" target="_blank">shop now</a
+      </div>
+      </div>
+      `
+      }).join('')
+
+
+      if (promoContainer && promoDeal) {
+        promoContainer.innerHTML = promoDeal;
+        promoContainer.classList.add('show-promo')
+      } else {
+        promoContainer?.classList.remove('show-promo')
+      }
+    }
+
 
     let dim = link.getBoundingClientRect();
     navMenuContainer.style.top = `${dim.bottom + 35}`;
@@ -120,6 +140,7 @@ window.addEventListener('mouseover', function (e: MouseEvent) {
   }
 
 });
+
 
 
 //handle search button click
