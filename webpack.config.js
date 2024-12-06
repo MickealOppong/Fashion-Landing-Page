@@ -2,8 +2,8 @@ const path = require("path");
 const { Extension } = require("typescript");
 
 module.exports = {
-  entry: path.resolve(__dirname, "./src/index.ts"),
-  mode: "production",
+  entry: path.resolve(__dirname, "./src/app.ts"),
+  mode: "development",
   module: {
     rules: [
       {

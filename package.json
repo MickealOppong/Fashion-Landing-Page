@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@types/node": "^22.10.1",
     "typescript": "^5.5.3",
     "webpack": "^5.93.0"
   },
@@ -9,6 +10,7 @@
     "test": "echo \"error: no test specified \" && exit 1"
   },
   "dependencies": {
+    "@types/bcrypt": "^5.0.2",
     "ts-loader": "^9.5.1",
     "webpack-cli": "^5.1.4"
   }

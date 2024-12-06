@@ -1,0 +1,335 @@
+[
+  {
+    "_id": 1,
+    "isRemoteWork": true,
+    "user_avatar": "/src/assets/img-1.jpeg",
+    "first_name": "Luffy",
+    "last_name": "Monkey",
+    "first_native_name": "Luffy",
+    "last_native_name": "Monkey",
+    "middle_native_name": "D.",
+    "department": "Web & Mobile",
+    "building": "Pilsudskiego 69 (Poland)",
+    "room": "1404",
+    "date_birth": {
+      "year": 1901,
+      "month": 1,
+      "day": 1
+    },
+    "desk_number": 20,
+    "manager": {
+      "id": 1,
+      "first_name": "John",
+      "last_name": "Snow"
+    },
+    "phone": "+12931293129",
+    "email": "luffy.monkey@leverx.com",
+    "skype": "live:.cid.21asd41jd1m132",
+    "cnumber": "C5336116",
+    "citizenship": "Georgia",
+    "visa": [
+      {
+        "issuing_country": "Poland",
+        "type": "National visa type D",
+        "start_date": 1652158800000,
+        "end_date": 1683608400000
+      }
+    ]
+  },
+  {
+    "_id": 2,
+    "isRemoteWork": true,
+    "user_avatar": "/src/assets/img-2.jpeg",
+    "first_name": "Susan",
+    "last_name": "James",
+    "first_native_name": "Susan",
+    "last_native_name": "James",
+    "middle_native_name": "S.",
+    "department": "Testing",
+    "building": "Narutowicza 33 (Poland)",
+    "room": "1400",
+    "date_birth": {
+      "year": 1991,
+      "month": 12,
+      "day": 1
+    },
+    "desk_number": 21,
+    "manager": {
+      "id": 2,
+      "first_name": "Kojo",
+      "last_name": "Ken"
+    },
+    "phone": "+12931293129",
+    "email": "susan.james@leverx.com",
+    "skype": "susan.james",
+    "cnumber": "C5336117",
+    "citizenship": "Lithuania",
+    "visa": [
+      {
+        "issuing_country": "Poland",
+        "type": "National visa type D",
+        "start_date": 1652158800000,
+        "end_date": 1683608400000
+      }
+    ]
+  },
+  {
+    "_id": 3,
+    "isRemoteWork": false,
+    "user_avatar": "/src/assets/img-3.jpeg",
+    "first_name": "Mike",
+    "last_name": "Epps",
+    "first_native_name": "Mike",
+    "last_native_name": "Epps",
+    "middle_native_name": "M.",
+    "department": "UX Design",
+    "building": "Taczaka 33 (Poland)",
+    "room": "1402",
+    "date_birth": {
+      "year": 1990,
+      "month": 7,
+      "day": 22
+    },
+    "desk_number": 19,
+    "manager": {
+      "id": 3,
+      "first_name": "Mike",
+      "last_name": "Oppong"
+    },
+    "phone": "+12931293129",
+    "email": "mike.epps@leverx.com",
+    "skype": "mike.epps",
+    "cnumber": "C5336118",
+    "citizenship": "Germany",
+    "visa": [
+      {
+        "issuing_country": "Poland",
+        "type": "National visa type D",
+        "start_date": 1652158800000,
+        "end_date": 1683608400000
+      }
+    ]
+  },
+  {
+    "_id": 4,
+    "isRemoteWork": false,
+    "user_avatar": "/src/assets/img-6.jpeg",
+    "first_name": "Kwesi",
+    "last_name": "Kwarteng",
+    "first_native_name": "Kwesi",
+    "last_native_name": "Kwarteng",
+    "middle_native_name": "K.",
+    "department": "UX Design",
+    "building": "Roi 33a (Poland)",
+    "room": "1402",
+    "date_birth": {
+      "year": 1990,
+      "month": 7,
+      "day": 22
+    },
+    "desk_number": 19,
+    "manager": {
+      "id": 4,
+      "first_name": "Mike",
+      "last_name": "Oppong"
+    },
+    "phone": "+12931293129",
+    "email": "kwasi.kwarteng@leverx.com",
+    "skype": "kwesi.k",
+    "cnumber": "C5336218",
+    "citizenship": "Ghana",
+    "visa": [
+      {
+        "issuing_country": "Poland",
+        "type": "National visa type D",
+        "start_date": 1652158800000,
+        "end_date": 1683608400000
+      }
+    ]
+  },
+  {
+    "_id": 5,
+    "isRemoteWork": false,
+    "user_avatar": "/src/assets/img-7.jpeg",
+    "first_name": "Anna",
+    "last_name": "Suzzy",
+    "first_native_name": "Anna",
+    "last_native_name": "Suzzy",
+    "middle_native_name": "A.",
+    "department": " Web & Mobile",
+    "building": "Roi 33a (Poland)",
+    "room": "1400",
+    "date_birth": {
+      "year": 1990,
+      "month": 7,
+      "day": 22
+    },
+    "desk_number": 19,
+    "manager": {
+      "id": 5,
+      "first_name": "Anna",
+      "last_name": "Suzzy"
+    },
+    "phone": "+12931293129",
+    "email": "Anna.suzzy@leverx.com",
+    "skype": "anna.s",
+    "cnumber": "C5336218",
+    "citizenship": "USA",
+    "visa": [
+      {
+        "issuing_country": "Poland",
+        "type": "National visa type D",
+        "start_date": 1652158800000,
+        "end_date": 1683608400000
+      }
+    ]
+  },
+  {
+    "_id": 6,
+    "isRemoteWork": true,
+    "user_avatar": "/src/assets/img-4.jpeg",
+    "first_name": "Kwesi",
+    "last_name": "Kwarteng",
+    "first_native_name": "Kwesi",
+    "last_native_name": "Kwarteng",
+    "middle_native_name": "K.",
+    "department": "UX Design",
+    "building": "Roi 33a (Poland)",
+    "room": "1402",
+    "date_birth": {
+      "year": 1990,
+      "month": 7,
+      "day": 22
+    },
+    "desk_number": 19,
+    "manager": {
+      "id": 6,
+      "first_name": "Mike",
+      "last_name": "Oppong"
+    },
+    "phone": "+12931293129",
+    "email": "kwasi.kwarteng@leverx.com",
+    "skype": "kwesi.k",
+    "cnumber": "C5336218",
+    "citizenship": "Ghana",
+    "visa": [
+      {
+        "issuing_country": "Poland",
+        "type": "National visa type D",
+        "start_date": 1652158800000,
+        "end_date": 1683608400000
+      }
+    ]
+  },
+  {
+    "_id": 7,
+    "isRemoteWork": true,
+    "user_avatar": "/src/assets/img-8.jpeg",
+    "first_name": "Eli",
+    "last_name": "Banana",
+    "first_native_name": "Eli",
+    "last_native_name": "Banana",
+    "middle_native_name": "E.",
+    "department": "UX Design",
+    "building": "Roi 33a (Poland)",
+    "room": "1402",
+    "date_birth": {
+      "year": 1990,
+      "month": 7,
+      "day": 22
+    },
+    "desk_number": 19,
+    "manager": {
+      "id": 7,
+      "first_name": "Mike",
+      "last_name": "Oppong"
+    },
+    "phone": "+12931293129",
+    "email": "eli.banana@leverx.com",
+    "skype": "eli.b",
+    "cnumber": "C5336218",
+    "citizenship": "Hungary",
+    "visa": [
+      {
+        "issuing_country": "Poland",
+        "type": "National visa type D",
+        "start_date": 1652158800000,
+        "end_date": 1683608400000
+      }
+    ]
+  },
+  {
+    "_id": 8,
+    "isRemoteWork": true,
+    "user_avatar": "/src/assets/img-9.jpeg",
+    "first_name": "Joe",
+    "last_name": "Apple",
+    "first_native_name": "Joe",
+    "last_native_name": "Apple",
+    "middle_native_name": "J.",
+    "department": "UX Design",
+    "building": "Roi 33a (Poland)",
+    "room": "1402",
+    "date_birth": {
+      "year": 1990,
+      "month": 7,
+      "day": 22
+    },
+    "desk_number": 19,
+    "manager": {
+      "id": 8,
+      "first_name": "Mike",
+      "last_name": "Oppong"
+    },
+    "phone": "+12931293129",
+    "email": "joe.apple@leverx.com",
+    "skype": "joe.a",
+    "cnumber": "C5336218",
+    "citizenship": "Canada",
+    "visa": [
+      {
+        "issuing_country": "Poland",
+        "type": "National visa type D",
+        "start_date": 1652158800000,
+        "end_date": 1683608400000
+      }
+    ]
+  },
+  {
+    "_id": 9,
+    "isRemoteWork": true,
+    "user_avatar": "/src/assets/img-10.jpeg",
+    "first_name": "Haida",
+    "last_name": "Mohammed",
+    "first_native_name": "Haida",
+    "last_native_name": "Mohammed",
+    "middle_native_name": "H.",
+    "department": "UX Design",
+    "building": "Roi 33a (Poland)",
+    "room": "1402",
+    "date_birth": {
+      "year": 1990,
+      "month": 7,
+      "day": 22
+    },
+    "desk_number": 19,
+    "manager": {
+      "id": 9,
+      "first_name": "Mike",
+      "last_name": "Oppong"
+    },
+    "phone": "+12931293129",
+    "email": "haida.ohammed@leverx.com",
+    "skype": "haida.m",
+    "cnumber": "C5336218",
+    "citizenship": "Qatar",
+    "visa": [
+      {
+        "issuing_country": "Poland",
+        "type": "National visa type D",
+        "start_date": 1652158800000,
+        "end_date": 1683608400000
+      }
+    ]
+  }
+]
